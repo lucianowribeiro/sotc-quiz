@@ -1,5 +1,5 @@
 {
-  "name": "aluraquiz-base",
+  "name": "sotcquiz",
   "version": "1.0.1",
   "scripts": {
     "dev": "next",
@@ -10,6 +10,7 @@
     "next": "latest",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
+    "react-helmet": "^6.1.0",
     "react-is": "^16.8.0",
     "styled-components": "^5.0.0"
   },

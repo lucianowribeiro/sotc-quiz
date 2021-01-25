@@ -19,7 +19,7 @@ const Widget = styled.div`
   p {
     font-size: 14px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.4;
   }
 `;
 
@@ -37,6 +37,21 @@ Widget.Header = styled.header`
 
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  & > input,& > button {
+    height: 40px;
+    margin: 5px 0;
+    border-radius: 4px;
+  }
+  & > button{
+    background-color: ${({ theme }) => theme.colors.primary};
+    border: none;
+  }
+  & > button:active{
+    transition:transform 150ms ease-in;
+    transform: scaleX(1.05); 
+  }
   & > *:first-child {
     margin-top: 0;
   }

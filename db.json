@@ -1,28 +1,30 @@
 {
-  "bg": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2017/06/css-is-awesome-scaled.jpg?resize=1536%2C1208&ssl=1",
-  "title": "Quiz CSS da Alura",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "bg": "https://www.pdvg.it/wp-content/uploads/2017/12/Shadow-Of-The-Colossus.jpg",
+  "title": "Quiz SOTC da Alura",
+  "description": "Teste os seus conhecimentos sobre este incrivel game chamado Shadow of the Colossus",
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "title": "Quantos colossus tem o game?",
       "description": "Essa é pra aquecer",
-      "answer": 2,
+      "answer": 3,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "14",
+        "17",
+        "15",
+        "16"
       ]
     },
     {
       "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "title": "Quantos pontos fracos tem o Gauis no no modo dificil?",
+      "description": "Agora um pouco mais dificil",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "3",
+         "2",
+         "4",
+         "5"
       ]
     }
   ],
@@ -31,9 +33,9 @@
   ],
   "theme": {
     "colors": {
-      "primary": "#0d47a1",
-      "secondary": "#29b6f6",
-      "mainBg": "#171B35",
+      "primary": "#33c9dc",
+      "secondary": "#bdbaa3",
+      "mainBg": "#00000070",
       "contrastText": "#FFFFFF",
       "wrong": "#FF5722",
       "success": "#4CAF50"
