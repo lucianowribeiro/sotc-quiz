@@ -1,14 +1,13 @@
-# AluraQuiz Base
+# Sotc Quiz
 
-Seja bem vindo ao projeto base do AluraQuiz!
+HI Im Luciano an this is my version of Alura'Imersão React Next.js
 
-![Capa do Projeto](/_docs/capa.png)
+- Aula 1 :+1: 
 
-# Onde está o Layout base?
-- [Link](https://www.figma.com/file/cg1MIzSRRss8ggpypQbmdD/AluraQuiz?node-id=0%3A1)
+![Project Image](/_docs/capa.png)
 
+## Project build by Vercel:
 
-# Como pegar cores tema diferentes para minha app?
+- [Link]()
 
-Você pode dar uma olhada nesse link e separar uma palheta que combine com sua imagem de background :) :
-- https://material-ui.com/customization/color/#playground
+Thanks for enjoy
