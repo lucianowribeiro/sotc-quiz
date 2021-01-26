@@ -1,10 +1,10 @@
 {
   "bg": "https://www.pdvg.it/wp-content/uploads/2017/12/Shadow-Of-The-Colossus.jpg",
-  "title": "Quiz SOTC da Alura",
+  "title": "Quiz Shadow of the Colossus",
   "description": "Teste os seus conhecimentos sobre este incrivel game chamado Shadow of the Colossus",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+      "image": "https://upload.wikimedia.org/wikipedia/en/b/bf/Sotc_boxart.jpg",
       "title": "Quantos colossus tem o game?",
       "description": "Essa é pra aquecer",
       "answer": 3,
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+      "image": "https://i.pinimg.com/originals/f6/17/b8/f617b82615f5d17f4b3799cedb1782a6.jpg",
       "title": "Quantos pontos fracos tem o Gauis no no modo dificil?",
       "description": "Agora um pouco mais dificil",
       "answer": 0,
