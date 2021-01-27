@@ -4,7 +4,7 @@
   "description": "Teste os seus conhecimentos sobre este incrivel game chamado Shadow of the Colossus",
   "questions": [
     {
-      "image": "https://upload.wikimedia.org/wikipedia/en/b/bf/Sotc_boxart.jpg",
+      "image": "https://techcrunch.com/wp-content/uploads/2018/01/sotc_screens_launch_4k_03.png?w=1390&crop=1",
       "title": "Quantos colossus tem o game?",
       "description": "Essa é pra aquecer",
       "answer": 3,
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "image": "https://i.pinimg.com/originals/f6/17/b8/f617b82615f5d17f4b3799cedb1782a6.jpg",
+      "image": "https://www.densetsugames.com.br/wp-content/uploads/2018/02/SOTC.jpg",
       "title": "Quantos pontos fracos tem o Gauis no no modo dificil?",
       "description": "Agora um pouco mais dificil",
       "answer": 0,

@@ -19,11 +19,14 @@ const Widget = styled.div`
     font-weight: 400;
     line-height: 1.4;
   }
+  & > img{
+    width:100%;
+  }
 `;
 
 Widget.Header = styled.header`
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   padding: 18px 32px;
   background-color: ${({ theme }) => theme.colors.primary};
@@ -45,9 +48,14 @@ Widget.Content = styled.div`
     border-radius: 4px;
   }
   & > form > button{
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.mainBg};
+    color: white;
     border: none;
   }
+  & > form > button[type="submit"]{
+    background-color: ${({ theme }) => theme.colors.primary};
+    border: none;
+  } 
   & > form > button:active{
     transition:transform 150ms ease-in;
     transform: scaleX(1.05); 

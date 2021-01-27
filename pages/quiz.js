@@ -27,23 +27,23 @@ export default function Quiz() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>{db.title}</h1>
+            <h1>Pergunta 1 de 5</h1>
             <p>
               Seja bem vindo,
-              {' '}
               {router.query.name}
-              {' '}
             </p>
           </Widget.Header>
+          <img src={db.questions[0].image} alt="" />
           <Widget.Content>
-            <img src={db.questions[0].image} alt="" />
             <h2>{db.questions[0].title}</h2>
             <p>{db.questions[0].description}</p>
-            <QuizContainer>{db.questions[0].alternatives[0]}</QuizContainer>
-            <QuizContainer>{db.questions[0].alternatives[1]}</QuizContainer>
-            <QuizContainer>{db.questions[0].alternatives[2]}</QuizContainer>
-            <QuizContainer>{db.questions[0].alternatives[3]}</QuizContainer>
-            <button type="submit">Confirmar</button>
+            <form>
+              <button>{db.questions[0].alternatives[0]}</button>
+              <button>{db.questions[0].alternatives[1]}</button>
+              <button>{db.questions[0].alternatives[2]}</button>
+              <button>{db.questions[0].alternatives[3]}</button>
+              <button type="submit">Confirmar</button>
+            </form>
           </Widget.Content>
         </Widget>
         <Footer />
