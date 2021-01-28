@@ -4,7 +4,7 @@
   "description": "Teste os seus conhecimentos sobre este incrivel game chamado Shadow of the Colossus",
   "questions": [
     {
-      "image": "https://techcrunch.com/wp-content/uploads/2018/01/sotc_screens_launch_4k_03.png?w=1390&crop=1",
+      "image": "https://cdn.shopify.com/s/files/1/0040/7106/3670/products/esclairstudios-fanart-sotc-colossi-closeup-2@2x.jpg?v=1534091824",
       "title": "Quantos colossus tem o game?",
       "description": "Essa é pra aquecer",
       "answer": 3,
@@ -25,6 +25,102 @@
          "2",
          "4",
          "5"
+      ]
+    },
+    {
+      "image": "https://www.densetsugames.com.br/wp-content/uploads/2018/05/sdot1.jpg",
+      "title": "Como se consegue a mancha branca na cabeça no cavalo?",
+      "description": "Para os amantes de cavalos",
+      "answer": 2,
+      "alternatives": [
+         "Completar o modo dificil no game",
+         "Completar o modo time attack no game",
+         "Ter no mesmo memory card o save do game Ico",
+         "A mancha branca no cavalo?"
+      ]
+    },
+    {
+      "image": "https://neverplayblog.files.wordpress.com/2014/06/248240_daenra_wander-and-the-colossus.jpg",
+      "title": "Como se consegue a espada da rainha e qual era seu poder? ",
+      "description": "Só para os viciados",
+      "answer": 1,
+      "alternatives": [
+         "Completar o modo normal/Matar com 1 hit o colossus",
+         "Completar o modo time attack dificil/Acabar com 1 hit um ponto fraco de um colossus",
+         "Completar o time attack no modo normal/Tirar metade da vida de um colossi",
+         "Completar o modo dificil/Lançar um raio nos colossi"
+      ]
+    },
+    {
+      "image": "https://sm.ign.com/t/ign_br/screenshot/default/shadow-of-the-colossus-ps4-remake-review-powerup-2_vt24.1280.png",
+      "title": "Qual é menor colosso do jogo?",
+      "description": "Sempre tem aquela duvida",
+      "answer": 0,
+      "alternatives": [
+         "Celosia",
+         "Kuromori",
+         "Cenobia",
+         "Agro"
+      ]
+    },
+    {
+      "image": "https://pm1.narvii.com/6746/bcd38b9ea08d695344ce5bb657af4ba08033a743v2_00.jpg",
+      "title": "Quais são os colossos agressivos?",
+      "description": "Não precisamente neste ordem",
+      "answer": 4,
+      "alternatives": [
+         "Phalanx, Phaedra, Pelagia, Valus, Avion, Malus",
+         "Dirge, Phalanx, Phaedra, Pelagia, Malus, Hydrus",
+         "Pelagia, Cenobia, Kuromori, Phaedra, Hydrus",
+         "Celosia, Cenobia, Dirge, Kuromori, Malus"
+      ]
+    },
+    {
+      "image": "https://pm1.narvii.com/7583/8d10f85dd15621691ea354779e2413e808deb85br1-360-450v2_uhq.jpg",
+      "title": "O quem tem de secreto na fortaleza da area do primeiro colossus tem na versao de ps2 ",
+      "description": "Agora um pouco mais dificil",
+      "answer": 4,
+      "alternatives": [
+         "Um lagarto",
+         "Um planta",
+         "Um vaso",
+         "Nada"
+      ]
+    },
+    {
+      "image": "https://pm1.narvii.com/6742/1300c627f0d3335f1c6cdaeabdd393d4e7ed4f44v2_hq.jpg",
+      "title": "Se você comer a fruta no Jardim Secreto ,o que aconteçe?",
+      "description": "Agora um pouco mais dificil",
+      "answer": 1,
+      "alternatives": [
+         "Wander morre",
+         "Wander perde seu HP",
+         "Wander perde sua stamina",
+         "Nada acontece"
+      ]
+    },
+    {
+      "image": "https://www.gamereactor.pt/media/50/shadowcolossus_2345013b.jpg",
+      "title": "Quais destes colossos usam arma?",
+      "description": "Colossi civilizados",
+      "answer": 0,
+      "alternatives": [
+         "Valus, Gaius e Argus",
+         "Valus, Barba e Argus",
+         "Valus, Barba e Malus",
+         "Valus, Gauis e Malus"
+      ]
+    },
+    {
+      "image": "https://img.ibxk.com.br/2017/06/14/14124938237027.jpg",
+      "title": "No remake na versão de ps4,quantas reliquias tem no jogo?",
+      "description": "Bora parar um pouco para contar",
+      "answer": 2,
+      "alternatives": [
+         "81",
+         "80",
+         "79",
+         "70"
       ]
     }
   ],

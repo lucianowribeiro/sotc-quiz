@@ -17,16 +17,13 @@ const Widget = styled.div`
   p {
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.4;
-  }
-  & > img{
-    width:100%;
+    line-height: 1;
   }
 `;
 
 Widget.Header = styled.header`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 18px 32px;
   background-color: ${({ theme }) => theme.colors.primary};
@@ -38,28 +35,6 @@ Widget.Header = styled.header`
 
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
-  & > form{
-    display: flex;
-    flex-direction: column;
-  }
-  & > form > input , & > form > button{
-    height: 40px;
-    margin: 5px 0;
-    border-radius: 4px;
-  }
-  & > form > button{
-    background-color: ${({ theme }) => theme.colors.mainBg};
-    color: white;
-    border: none;
-  }
-  & > form > button[type="submit"]{
-    background-color: ${({ theme }) => theme.colors.primary};
-    border: none;
-  } 
-  & > form > button:active{
-    transition:transform 150ms ease-in;
-    transform: scaleX(1.05); 
-  }
   & > *:first-child {
     margin-top: 0;
   }
@@ -69,6 +44,24 @@ Widget.Content = styled.div`
   ul {
     list-style: none;
     padding: 0;
+  }
+`;
+
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
   }
 `;
 
