@@ -28,6 +28,8 @@ function QuestionWidget({
   onSubmit,
 }) {
   const questionId = `question__${questionIndex}`;
+  const [selectedAlternative, setSelectedAlternative] = React.useState();
+  const isCorrect = selectedAlternative === question.answer;
   return (
     <Widget>
       <Widget.Header>
@@ -66,21 +68,21 @@ function QuestionWidget({
               <Widget.Topic
                 as="label"
                 htmlFor={alternativeId}
+                key={alternativeId}
               >
                 <input
                   // style={{ display: 'none' }}
                   id={alternativeId}
                   name={questionId}
+                  onChange={() => setSelectedAlternative(alternativeIndex)}
                   type="radio"
                 />
                 {alternative}
               </Widget.Topic>
             );
           })}
-
-          {/* <pre>
-            {JSON.stringify(question, null, 4)}
-          </pre> */}
+          {isCorrect && <p>Você acertou</p>}
+          {/* {!isCorrect && <p>Você errou</p>} */}
           <Button type="submit">
             Confirmar
           </Button>
