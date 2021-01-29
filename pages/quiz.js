@@ -40,7 +40,7 @@ function ResultWidget({ results }) {
           }, 0)} */}
           {result}
           {' '}
-          questoes.
+          questões.
         </p>
         <p>
           No total de
@@ -48,7 +48,7 @@ function ResultWidget({ results }) {
           {(result * 50)}
           {' '}
           pontos.
-          { result >= 5 ? <p>Parabens</p> : <p>Vacilou</p>}
+          { result >= 5 ? <p>Parabéns</p> : <p>Vacilou</p>}
         </p>
         {/* <ul>
           {results.map((result, index) => (
@@ -132,7 +132,7 @@ function QuestionWidget({
               onSubmit();
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
-            }, 0.5 * 1000);
+            }, 2 * 1000);
           }}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
