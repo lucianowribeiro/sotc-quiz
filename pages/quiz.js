@@ -1,5 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { useRouter } from 'next/router';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
@@ -9,15 +12,24 @@ import AlternativesForm from '../src/components/AlternativesForm';
 import Button from '../src/components/Button';
 
 function ResultWidget({ results }) {
+  const router = useRouter();
+  const result = results.filter((x) => x).length;
+  const imageOK = 'https://www.criarmeme.com.br/meme/meme-5109--ok-!.jpg';
+  const imagenotOK = 'https://files.nsctotal.com.br/s3fs-public/graphql-upload-files/memes%20carnaval%202020.jpg?dtD_29gcL_.VxU_qFllBDoALi6ROnZ3s';
   return (
     <Widget>
       <Widget.Header>
-        Tela de Resultado:
+        {'Hora da verdade '}
       </Widget.Header>
-
+      {result >= 5 && <img src={imageOK} style={{ width: '100%' }} alt="result" />}
+      {result < 5 && <img src={imagenotOK} style={{ width: '100%' }} alt="result" />}
+      {/* <img src="https://www.criarmeme.com.br/meme/meme-5109--ok-!.jpg"/>
+       */}
       <Widget.Content>
         <p>
-          Você acertou
+          {router.query.name}
+          {' '}
+          acertou
           {' '}
           {/* {results.reduce((somatoriaAtual, resultAtual) => {
             const isAcerto = resultAtual === true;
@@ -26,23 +38,30 @@ function ResultWidget({ results }) {
             }
             return somatoriaAtual;
           }, 0)} */}
-          {results.filter((x) => x).length}
+          {result}
           {' '}
-          perguntas
+          questoes.
         </p>
-        <ul>
+        <p>
+          No total de
+          {' '}
+          {(result * 50)}
+          {' '}
+          pontos.
+          { result >= 5 ? <p>Parabens</p> : <p>Vacilou</p>}
+        </p>
+        {/* <ul>
           {results.map((result, index) => (
             <li key={`result__${result}`}>
               #
               {index + 1}
               {' '}
-              Resultado:
               {result === true
                 ? 'Acertou'
                 : 'Errou'}
             </li>
           ))}
-        </ul>
+        </ul> */}
       </Widget.Content>
     </Widget>
   );
@@ -79,6 +98,9 @@ function QuestionWidget({
     <Widget>
       <Widget.Header>
         {/* <BackLinkArrow href="/" /> */}
+        <Link href="/">
+          <Image src="/back.svg" alt="back" style={{ cursor: 'pointer' }} width="40%" height="20%" />
+        </Link>
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>
@@ -110,7 +132,7 @@ function QuestionWidget({
               onSubmit();
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
-            }, 3 * 1000);
+            }, 0.5 * 1000);
           }}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
@@ -129,7 +151,7 @@ function QuestionWidget({
                   style={{ display: 'none' }}
                   id={alternativeId}
                   name={questionId}
-                  onChange={() => setSelectedAlternative(alternativeIndex)}
+                  onClick={() => setSelectedAlternative(alternativeIndex)}
                   type="radio"
                 />
                 {alternative}
