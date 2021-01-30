@@ -26,8 +26,16 @@ Widget.Header = styled.header`
   justify-content: flex-start;
   align-items: center;
   padding: 18px 32px;
-  background-color: ${({ theme }) => theme.colors.primary};
-  
+  background-image: url("https://pa1.narvii.com/6792/51da8b141b2c1169f8cf0cc8f93e193d5134c624_128.gif");
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  & img[alt="back"]{
+    cursor: pointer;
+  }
+  & img[alt="back"]:hover{
+    opacity: 0.7;
+    transition: opacity 100ms ease-in-out;
+  }
   * {
     margin: 0;
   }
@@ -35,7 +43,7 @@ Widget.Header = styled.header`
 
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
-  & > *:first-child {
+  & > *:first-child { 
     margin-top: 0;
   }
   & > *:last-child {

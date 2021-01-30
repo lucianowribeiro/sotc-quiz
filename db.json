@@ -125,7 +125,8 @@
     }
   ],
   "external": [
-    ""
+    "https://quiz-react.brenoha.vercel.app/api/db",
+    "https://avengersquiz.penadev.vercel.app/"
   ],
   "theme": {
     "colors": {

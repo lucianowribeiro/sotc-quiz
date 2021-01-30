@@ -4,14 +4,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import Lottie from 'react-lottie';
-import db from '../db.json';
-import animationData from '../src/screens/Quiz/animation/animation.json';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import AlternativesForm from '../src/components/AlternativesForm';
-import Button from '../src/components/Button';
+
+import animationData from './animation/animation.json';
+import Widget from '../../components/Widget';
+import QuizLogo from '../../components/QuizLogo';
+import QuizBackground from '../../components/QuizBackground';
+import QuizContainer from '../../components/QuizContainer';
+import AlternativesForm from '../../components/AlternativesForm';
+import Button from '../../components/Button';
 
 function ResultWidget({ results }) {
   const router = useRouter();
@@ -100,7 +100,6 @@ function QuestionWidget({
   const questionId = `question__${questionIndex}`;
   const isCorrect = selectedAlternative === question.answer;
   const hasAlternativeSelected = selectedAlternative !== undefined;
-
   return (
     <Widget>
       <Widget.Header>
@@ -184,14 +183,13 @@ const screenStates = {
   LOADING: 'LOADING',
   RESULT: 'RESULT',
 };
-export default function QuizPage() {
+export default function QuizPage({ externalQuestions, externalBg }) {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
-  const totalQuestions = db.questions.length;
+  const totalQuestions = externalQuestions.length;
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const questionIndex = currentQuestion;
-  const question = db.questions[questionIndex];
-
+  const question = externalQuestions[questionIndex];
   function addResult(result) {
     // results.push(result);
     setResults([
@@ -222,7 +220,7 @@ export default function QuizPage() {
   }
 
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundImage={externalBg}>
       <QuizContainer>
         <QuizLogo />
         {screenState === screenStates.QUIZ && (

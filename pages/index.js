@@ -50,7 +50,6 @@ export default function Home() {
             <form onSubmit={function (infosDoEvento) {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
-              console.log('Fazendo uma submissão por meio do react');
             }}
             >
               <Input
@@ -69,13 +68,27 @@ export default function Home() {
         <Widget>
           <Widget.Content>
             <h1>Quizes da Galera</h1>
-
-            <p>lorem ipsum dolor sit amet...</p>
+            <ul as="button">
+              {name.length !== 0 && db.external.map((linkExternal) => {
+                const [projectName, nameUser] = linkExternal
+                  .replace(/\//g, '')
+                  .replace('https:', '')
+                  .replace('vercel.app', '')
+                  .split('.');
+                return (
+                  <li key={linkExternal}>
+                    <Widget.Topic href={`/quiz/${projectName}___${nameUser}`}>
+                      {`${projectName} by ${nameUser}`}
+                    </Widget.Topic>
+                  </li>
+                );
+              })}
+            </ul>
           </Widget.Content>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/omariosouto" />
+      <GitHubCorner projectUrl="https://github.com/lucianowribeiro" />
     </QuizBackground>
   );
 }

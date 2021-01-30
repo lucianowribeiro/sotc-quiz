@@ -35,6 +35,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="shortcut icon" href="/sotc.png" />
         <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet" />
       </Head>
       <ThemeProvider theme={theme}>
