@@ -7,7 +7,7 @@ HI Im Luciano an this is my version of Alura'Imersão React Next.js
 - Aula 3 :+1:
 - Aula 4 :+1:
 - Aula 5 :+1:
-![Project Image](/_docs/capa.png)
+![Project Image](/_docs/capa.gif)
 
 ## Project build by Vercel:
 
